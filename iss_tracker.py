@@ -1,5 +1,9 @@
-# Team: Techmates
-# Team Member: Ed Francis C. Librando
+# Team: Tech Mate
+# Team Members: 
+# Derick Aton
+# Ed Francis C. Librando 
+# Honeyzenth Flores 
+# James David A Guba
 import requests
 import folium
 
