@@ -1,4 +1,4 @@
-# Team: Tech Mate
+# Team: Tech Mates
 # Team Members: 
 # Derick Aton
 # Ed Francis C. Librando 
