@@ -19,6 +19,12 @@ jobs:
       with:
         python-version: 3.11
 
+    - name: Debug - List files in root
+      run: ls -al
+
+    - name: Debug - List all folders recursively
+      run: ls -R
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
