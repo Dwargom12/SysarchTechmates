@@ -56,6 +56,7 @@ def log_position(lat, lon):
     print(f"Logged coordinates: ({lat}, {lon})")
 
 # === Create and save map ===
+# === Create and save map ===
 def create_map(lat, lon):
     m = folium.Map(location=[lat, lon], zoom_start=2)
     folium.Marker([lat, lon], tooltip="🛰 ISS Location").add_to(m)
