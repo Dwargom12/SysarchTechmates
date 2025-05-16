@@ -14,6 +14,7 @@ import csv
 LOG_FILE = "iss_log.csv"
 MAP_FILE = "iss_map.html"
 YOUR_LOCATION = (37.7749, -122.4194)  # San Francisco
+# === CONFIG ===
 
 # === Get current ISS location ===
 def get_iss_location():
