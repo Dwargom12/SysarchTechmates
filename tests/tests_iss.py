@@ -14,8 +14,6 @@ if __name__ == "__main__":
 
     # git init
 
-    # git remote add origin https://github.com/Dwargom12/iss-tracker.git
-
     # git add .
 
     # git commit -m "Added Comments for Testing of Auto Debugger"
