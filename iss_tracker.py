@@ -14,6 +14,7 @@ import csv
 LOG_FILE = "iss_log.csv"
 MAP_FILE = "iss_map.html"
 YOUR_LOCATION = (37.7749, -122.4194)  # San Francisco
+# === CONFIG ===
 
 # === Get current ISS location ===
 def get_iss_location():
@@ -54,6 +55,7 @@ def log_position(lat, lon):
         writer.writerow([datetime.datetime.now().isoformat(), lat, lon])
     print(f"Logged coordinates: ({lat}, {lon})")
 
+# === Create and save map ===
 # === Create and save map ===
 def create_map(lat, lon):
     m = folium.Map(location=[lat, lon], zoom_start=2)
