@@ -9,3 +9,17 @@ class TestISS(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    # cd path/to/iss-tracker
+
+    # git init
+
+    # git remote add origin https://github.com/Dwargom12/iss-tracker.git
+
+    # git add .
+
+    # git commit -m "Added Comments for Testing of Auto Debugger"
+
+    # git branch -M main
+
+    # git push -u origin main
