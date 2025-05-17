@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     # git add .
 
-    # git commit -m "Testing of Debugger"
+    # git commit -m "Testing of Auto Debugger"
 
     # git branch -M main
 
