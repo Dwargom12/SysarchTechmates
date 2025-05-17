@@ -9,7 +9,6 @@ import folium
 from geopy.distance import geodesic
 import datetime
 import csv
-import time
 
 # === CONFIG ===
 LOG_FILE = "iss_log.csv"
@@ -64,18 +63,6 @@ def create_map(lat, lon):
     m.save(MAP_FILE)
     print(f"Map saved to {MAP_FILE}")
 
-# === Estimate ISS speed ===
-def estimate_speed(prev_lat, prev_lon, delay_seconds=10):
-    print(f"\nWaiting {delay_seconds} seconds to estimate ISS speed...")
-    time.sleep(delay_seconds)
-    new_lat, new_lon = get_iss_location()
-    distance_km = calculate_distance((prev_lat, prev_lon), (new_lat, new_lon))
-    speed_kmh = (distance_km / delay_seconds) * 3600 if distance_km else None
-    if speed_kmh:
-        print(f"Estimated ISS speed: {speed_kmh:.2f} km/h")
-    else:
-        print("Could not calculate ISS speed.")
-
 # === Main script ===
 if __name__ == "__main__":
     print("Fetching ISS data...\n")
@@ -98,9 +85,6 @@ if __name__ == "__main__":
         # Log + Map
         log_position(lat, lon)
         create_map(lat, lon)
-
-        # Speed estimation
-        estimate_speed(lat, lon)
 
     else:
         print("Failed to get ISS data.")
